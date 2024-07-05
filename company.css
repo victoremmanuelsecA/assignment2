@@ -3,10 +3,12 @@ body {
     color:black;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+    background-color: green;
 }
 
 header {
-    background-color: yellow;
+    background-color:brown;
     color: black;
     padding: 10px 0;
 }
@@ -31,14 +33,14 @@ ul {
 
 nav  a {
     display: inline;
-    color: green;
+    color: brown;
     text-decoration: solid;
     padding: 14px 16px;
     transition: all 0.3s ease;
 }
 
 nav a:hover {
-    background-color: yellowgreen;
+    background-color: white;
     border-radius: 4px;
 }
 
@@ -73,7 +75,7 @@ nav a:hover {
 section {
     position: relative;
     padding: 60px 20px;
-    background-color: #f9f9f9;
+    background-color:yellow;
     margin: 20px 0;
     overflow: hidden;
 }
@@ -121,4 +123,35 @@ footer {
 
 .image img:hover {
     transform: scale(1.1);
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding:0 20px;
+}
+
+@keyframes fadein {
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery {
+        flex-direction: column;
+    }
+    #Home h3 {
+        font-size: 24px;
+    }
+    .price {
+        font-size: 16px;
+    }
 }

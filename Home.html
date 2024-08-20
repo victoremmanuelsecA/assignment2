@@ -3,83 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YungveeWears</title>
+    <title>Home</title>
     <link rel="stylesheet" href="company.css">
 </head>
 <body>
     <header>
-        <section id="navigation">
+        <div id="navigation">
             <nav>
                 <div id="logo">YungveeWears</div>
                 <ul>
-                   
-                    <h3><a href="location.html">location</a></h3>
-                    <h3><a href="About us.html">about us</a></h3>
-                    <h3><a href="Terms and condition.html">Terms and condition</a></h3>
-                    <h3> <a href="contact.html">Contact</a></li></h3>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="location.html">Location</a></li>
+                    <li><a href="About us.html">About Us</a></li>
+                    <li><a href="Terms and condition.html">Terms and Conditions</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
                 <div id="search-container">
                     <i class="fas fa-microscope" id="search-icon"></i>
                     <input type="text" id="search-input" placeholder="What are you looking for?" />
-                 </div>
-    
+                </div>
             </nav>
-        </section>
-        
+        </div>
     </header>
 
     <main>
         <section id="home">
-            <H3>Welcome to YungveeWears</H3>
+            <h3>Welcome to YungveeWears</h3>
             <p>
                 <i>
-                At YungveeWears, we pride ourselves on offering high-quality clothing that meets the latest trends in  fashion.
-                Our brand is dedicated to providing stylish and comfortable apparel for all ocassions.
-                With a team of experienced designers,we ensure that every piece of clothing is crafted with precision and care.
-                Our commitment to excellence has made us a favourite among fashion enthusiasts.
-                We use only the finest materials to create our garmentsm ensuring durability and a perfect fit.
-                We clothing brand is designed to make you look and feel best.
-                Discover the differnce that quality and style can make with Yungveewears.
-                We invite you to Explore Our collection and find your new favorite outfit today.
+                At YungveeWears, we pride ourselves on offering high-quality clothing that meets the latest trends in fashion.
+                Our brand is dedicated to providing stylish and comfortable apparel for all occasions.
+                With a team of experienced designers, we ensure that every piece of clothing is crafted with precision and care.
+                Our commitment to excellence has made us a favorite among fashion enthusiasts.
+                We use only the finest materials to create our garments, ensuring durability and a perfect fit.
+                Our clothing brand is designed to make you look and feel your best.
+                Discover the difference that quality and style can make with YungveeWears.
+                We invite you to explore our collection and find your new favorite outfit today.
                 Thank you for choosing YungveeWears - Where fashion meets quality.
                 </i>
-                
             </p>
         </section>
 
-        <div class="Gallery">
+        <div class="gallery">
             <div class="image">
-                <img src="bathing robe.webp" alt="bathing robe" onclick="openimage(this.src)">
-                <p class="price"> $250.20</p>
+                <img src="bathing robe.webp" alt="bathing robe" onclick="openImage(this.src)">
+                <p class="price">$250.20</p>
             </div>
             <div class="image">
-                <img src="double.webp" alt="double" onclick="openimage(this.src)">
-                <p class="Price"> $320.00</p>
+                <img src="double.webp" alt="double" onclick="openImage(this.src)">
+                <p class="price">$320.00</p>
             </div>
             <div class="image">
-                <img src="stefano.jpeg" alt="stefano" onclick="openimage(this.src)">
-                <p class="Price"> $700.20</p>
-            </div>
-            <div class="imaage">
-                <img src="nice.avif" alt="green" onclick="openimage(this.src)">
-                <p class="Price"> 200.50</p>
+                <img src="stefano.jpeg" alt="stefano" onclick="openImage(this.src)">
+                <p class="price">$700.20</p>
             </div>
             <div class="image">
-                <img src="all black.avif" alt="up and down" onclick="openimage(this.src)">
-                <p class="Price"> $600</p>
+                <img src="nice.avif" alt="green" onclick="openImage(this.src)">
+                <p class="price">$200.50</p>
             </div>
             <div class="image">
-                <img src="new.jpeg" alt="new" onclick="openimage(this.src)">
+                <img src="all black.avif" alt="up and down" onclick="openImage(this.src)">
+                <p class="price">$600</p>
+            </div>
+            <div class="image">
+                <img src="new.jpeg" alt="new" onclick="openImage(this.src)">
                 <p class="price">$3000</p>
             </div>
         </div>
 
+        <!-- Modal Structure -->
+        <div id="imageModal" class="modal">
+            <span onclick="closeModal()" class="close">&times;</span>
+            <img class="modal-content" id="modalImage">
+        </div>
+
     </main>
     <footer>
-        <p>&copy; 2024 YungveeWears. all rights reserved.</p>
+        <p>&copy; 2024 YungveeWears. All rights reserved.</p>
     </footer>
 
-   
-    
+    <script src="com.js"></script>
 </body>
 </html>

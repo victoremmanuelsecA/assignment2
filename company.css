@@ -93,15 +93,18 @@ section {
 
 /* Gallery Styles */
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     margin-top: 20px;
 }
 
+.carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .image {
-    width: 30%;
-    margin: 10px 0;
+    width: 90%;
+    margin: 20px 0;
     text-align: center;
     cursor: pointer;
     transition: transform 0.3s ease;
@@ -109,7 +112,7 @@ section {
 
 .image img {
     width: 100%;
-    height: 250px;
+    height: auto;
     object-fit: cover;
     border-radius: 4px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -176,9 +179,6 @@ footer {
     ul {
         flex-direction: column;
         align-items: center;
-    }
-    .gallery {
-        flex-direction: column;
     }
     .image {
         width: 100%;
